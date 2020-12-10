@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    table {
+      border-spacing: 0;
+      font-size: 16px;
+      
+    }
+
+    .box {
+      font-size: 0;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+      
+    }
+
+    .box .item {
+      font-size: 16px;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+
+    .box .item.item1 {
+      background-color: red;
+    }
+
+    .box .item.item2 {
+      background-color: green;
+    }
+
+    .box .item.item3 {
+      background-color: blue;
+    }
+
+    .box td {
+      height: 100px;
+      width: 100px;
+      padding: 0;
+    }
+
+    .box td:nth-child(1) {
+      background-color: gold;
+    }
+
+    .box td:nth-child(2) {
+      background-color: hotpink;
+    }
+
+    .box td:nth-child(3) {
+      background-color: deepskyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <!--  -->
+    <div class="item item2">item2</div>
+    <!--  -->
+    <div class="item item3">item3</div>
+    <table>
+      <tr>
+        <td>table1</td>
+        <td>table2</td>
+        <td>table3</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>정답의 동적 삽입</h3>
+  <hr>
+  <div>
+    <p>Q.거울아 거울아 세상에서 누가 제일 예쁘니?</p>
+    <button id='Q1'>답보기</button>
+  </div>
+  
+  <div>
+    <p>Q.오늘 점심 뭐먹지</p>
+    <button id='Q2'>답보기</button>
+  </div>
+
+  <script>
+    //1)이벤트 소스 찾기
+    const $buttons = document.querySelectorAll("button");
+    console.log($buttons);
+    //2)찾은 이벤트 소스에 이벤트 리스너 부착
+    Array.from($buttons).forEach(function(ele){ //forEach : 요소 하나하나 순회하면서 작업
+      ele.addEventListener("click", function(evt){
+        //3)이벤트 핸들러 내에서 처리로직 반영
+        console.log(evt);
+        if(evt.target.nextElementSibling!=null) return; //답이 한번만 나오게
+        const $question = evt.target.getAttribute('id');
+        //3-1)부모요소를 찾기
+        const $parentOfButton = evt.target.parentElement;
+        //3-2)답안으로 추가할 요소를 생성
+        const $p = document.createElement("p");
+        //3-3)생성된 요소의 컨텐츠로 답안 넣기
+        switch($question){
+          case 'Q1':
+            $p.textContent = '백설공주';
+            break;
+          case 'Q2':
+            $p.textContent = '고기';
+            break;
+        }
+        //3-4)생성된 요소를 부모요소의 자식요소로 추가
+        $parentOfButton.appendChild($p);
+      });
+    }); 
+
+  </script>
+  
+  
+</body>
+</html>

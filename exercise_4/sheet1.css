@@ -1,0 +1,15 @@
+body {margin: 1%;
+font-size: 16pt;}
+h3 {color: rgb(182, 34, 63);}
+
+h3:first-letter {color: red;}
+div>span {background-color: yellow;
+}
+ul {background-color: thistle;}
+li:first-of-type {color: green;}
+li:first-of-type+li {color: blue;}
+li:first-of-type+li+li {color: brown;}
+li:nth-child(even) {font-weight: bold;}
+.footer {color: red;}
+li:hover {background-color: greenyellow;}
+a {text-decoration: none;}

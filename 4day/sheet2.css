@@ -1,0 +1,20 @@
+/* <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> */
+  ul {margin-left: 0;
+    font-family: 'Nanum Pen Script',italic cursive; 
+  list-style: none;
+overflow: hidden;
+background-color: #333;
+border-radius: 10px;}
+  ul li {float: left;
+    color: azure;
+    margin-right: 10px;
+  }
+  ul li:hover {
+    /* background: #000; */
+  color: azure;
+cursor: pointer;
+text-decoration: underline;
+/* text-shadow: 3px 3px 5px brown; */
+/* box-shadow:3px 3px 10px cornsilk ,-3px -3px 10px cornsilk; */
+
+}

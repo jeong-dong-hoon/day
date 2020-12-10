@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <p>Q.거울아 거울아 세상에서 누가 제일 예쁘니?</p>
+    <button>답보기</button>
+  </div>
+  <script>
+    const $buttons = document.getElementsByTagName('button');
+    Array.from($buttons).forEach(function(ele){
+      ele.addEventListener("click",function(evt){
+        const $parent = evt.target.parentElement;
+        $parent.appendChild("div").innerHTML = '백설공주';
+      })
+    })
+  </script>
+</body>
+</html>

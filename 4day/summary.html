@@ -1,0 +1,70 @@
+
+1.블럭요소 <div> 인라인요소 <span> 블럭+인라인 <img> 
+{dispaly : block or inline_block}
+
+블럭요소   : 가로<width>, 세로<height> 크기를 가질수 있다.
+  {div}     width를 정하지않았을경우 전체를 차지하고 height를 정하지않았을경우 컨텐츠의 높이만큼 차지한다.
+
+인라인요소 : 컨텐츠크기 만큼의 영역을 차지한다. 
+  {span}    마진요소가 일어나지않는다. 
+
+블럭+인라인요소 : 가로,세로 크기를 가질수 있으나 가로공간이 없을시에만 아래로 배치된다
+  {img}
+
+2.모든요소는 박스모델을 가지고있다 {content; padding; border; margin} 
+
+
+3.float : 이미지,텍스트를 어울리게하는용도
+clear : float된 요소들을 차단함
+
+4.position : 요소에대한 위치를 배치함
+{left; right; top; bottom}
+{static : 기본값; relative : 원위치를 기준으로 이동배치; 
+absolute : 부모요소를 기준으로 이동배치(부모요소의 position : static이 아닌것을 기준으로); 
+fixed : 페이지영역을 기준으로 이동배치;
+sticky : 스크롤시 특정위치에 고정배치}
+outline의 경우 border와 위치가같으나 공간을 차지하지않음
+text-align은 인라인요소에만 적용됨
+한칸띄우면 자손 
+
+5. selector (선택자)
+{* ; . ; , ; # ; > ; []}
+* : 모든요소지칭
+, : 복수요소선택
+. : class
+# : id{동일한값을 지정할수없음}
+> : 직계자식 선택
+공백 : 직계포함 자손
+[] : 요소의 속성
+$="" :확장자 지정
++ : 형제요소 선택
+{인접형제결합자 : 바로다음요소선택}
+~ : 일반형제결합자
+가상클래스(pseudo-class) : 어떤 조건이나 상황에서 스타일을 적용하도록 만든 셀렉터
+{a-visited : 방문한링크
+hover : 마우스가 올라갈때
+active : 마우스를 누르고있을때
+first-of-type : 가장 첫번째 요소..등40개}
+*nth-child(숫자) : 자식요소의 숫자번째에 타겟
+
+6. css의 style은 가장 밑의옵션이 우선으로 적용된다
+스타일시트 link태그혹은 @import사용
+css의 스타일은 부모 태그로부터 상속받는다
+{상속받지않는요소도있음}
+*link로 써라
+
+7. 텍스트태그
+text-allign : 텍스트정렬
+font-size : 폰트크기 조절
+{em : 부모폰트의 배수 rem : html폰트의 배수}
+font-family : A , B , C {abc순으로 우선적용됨}
+font : style weight size family
+
+8.border : radius
+border를 둥글게함
+
+9.text-shadow : 그림자 수평 수직사이거리 굵기 색깔
+
+10. selector 연습 https://flukeout.github.io/#
+
+11. form태그

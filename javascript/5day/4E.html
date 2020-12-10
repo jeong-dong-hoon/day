@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.mouse{
+     position: absolute;
+
+    }
+  </style>
+</head>
+<body onmousemove="point(event)">
+  <h3>이미지 커서 만들기</h3>
+  <hr>
+  <div class="mouse" id="mouse"><img src="/img/1.png" alt="" style="width: 30px; height: 30px;"></div>
+  <p>마우스를 움직이면 이미지로 만든 커서가 마우스를 따라 다닙니다...</p>
+  <script>
+    document.onmousemove = (e) => {
+      let $mouse = document.getElementById('mouse');
+      $mouse.style.top = e.y+"px";
+      $mouse.style.left = e.x+"px";
+    }
+  </script>
+</body>
+</html>

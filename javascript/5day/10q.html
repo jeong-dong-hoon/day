@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ 
+    input#result {
+      width: 440px;
+      height: 50px;
+      font-size: 20px;
+    }
+    button {
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>계산기만들기</h3>
+  <hr>
+
+    <input type="text" id="result" value=""
+    onfocus="getout()">
+    <br>
+    <br>
+    <button>Back</button>
+    <button>CE</button>
+    <button>C</button>
+    <button>=</button>
+    <br>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>/</button>
+    <br>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>*</button>
+    <br>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>-</button>
+    <br>
+    <button>0</button>
+    <button>+</button>
+    <button>none</button>
+    <button>none</button>
+    
+  <script>
+    let $button = document.querySelectorAll('button');
+    let $result = document.getElementById("result");
+    Array.from($button).forEach(function(bts){
+      bts.addEventListener("click",(eve) => {
+        switch(eve.target.textContent){
+      case "=" :
+      $result.value = eval(`${$result.value}`)
+      break;
+      case "C" :
+      $result.value = "";
+      break;
+      case "CE" :
+      $result.value = "";
+      break;
+      case "Back" :
+      $result.value = $result.value.slice(0,-1);
+      break;
+      case "none" :
+      $result.value += "";
+      break;
+      default : $result.value += eve.target.textContent;
+      }  
+      })
+    })
+    
+  </script>
+</body>
+
+</html>

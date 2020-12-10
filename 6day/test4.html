@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+    ul li {
+      color: #ccc;
+      display: inline-block;
+    padding: 0.3rem;
+  background-color: #111;}
+  ul li:nth-child(1) {margin-right: -0.4rem;}
+  ul li:nth-child(3) {margin-left: -0.4rem;}
+
+  </style>
+  <script>
+    function item1() {document.getElementById("tox").src = "/img/1.png"}
+  </script>
+</head>
+
+<body>
+  <ul>
+    <li class="item1" onmouseover="item1()">menu1</li>
+    <li class="item2" id="tox">menu2</li>
+    <li class="item3">menu3</li>
+  </ul>
+</body>
+
+</html>

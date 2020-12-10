@@ -1,0 +1,27 @@
+body {
+  background-color: yellow;
+}
+p {
+  text-align: center;
+}
+
+/* p:first-of-type {
+  color: red;
+  font-size: 3em;
+}
+p:first-of-type+p>span {
+  color: green;
+} */
+p:nth-child(1) {
+  color: red;
+  font-size: 3em;
+}
+p:nth-child(2)>span {
+  color: green;
+}
+p:nth-last-child(1) {background-color: white;}
+p~
+/* p:nth-child(odd) {background-color: #ccc;} */
+/* p:nth-child(2)~p {color: violet;} */
+/* p:last-of-type {color: darkblue;} */
+/* p:last-of-type {background-color: white;} */

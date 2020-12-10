@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {display: inline-block;
+    width: 100px;
+  height: 100px;
+}
+div:nth-child(1){
+  background-color: red;
+}
+div:nth-child(2){
+  background-color: orange;
+}
+div:nth-child(3){
+  background-color: yellow;
+}
+  </style>
+</head>
+<body>
+  <div id="1" onmouseover="plus()">숫자증가</div>
+  <div id="2" onmouseover="show()">숫자표시</div>
+  <div id="3" onmouseover="minus()">숫자감소</div>
+<script>
+  let c=0;
+  let b = document.getElementById("2");
+  function plus(){
+    c++;
+    b.innerHTML=c;
+  }
+  function minus(){
+    if(c<=0){
+      alert('0보다 낮을수는없습니다.')
+    }
+    else{
+    c--;}
+    b.innerHTML=c;
+    
+  }
+  function show(){
+  }
+</script>
+</body>
+
+</html>

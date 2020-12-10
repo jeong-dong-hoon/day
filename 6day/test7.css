@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+li {list-style: none;}
+/* 헤더영역 */
+header {
+  height: 200px;
+}
+/* 상단메뉴 */
+.upmenu {
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+.upmenu .box1 {
+  width: 600px;
+  margin: auto;
+  text-align: right;
+  line-height: 80px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.upmenu .box1>div {
+  display: inline-block;
+}
+/* 상단이미지  */
+.img {
+  width: 600px;
+  height: 150px;
+  margin: auto;
+  background-image: url(https://cdn.pixabay.com/photo/2014/05/11/11/35/water-341762_960_720.jpg);
+  /* background-size: 600px; */
+  background-size: cover;
+}
+/* nav */
+nav {
+  width: 600px;
+  height: 50px;
+  margin: auto;
+  color: white;
+  background-color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+nav ul {
+line-height: 50px;}
+nav ul>li {
+  display: inline-block;
+  margin-left: 50px;
+}

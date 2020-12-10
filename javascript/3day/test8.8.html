@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {font-size: 50px;
+    color: green;
+    font-weight: 800;
+    text-align: justify;}
+    header>.search {display: inline-block;
+      height: 10px;
+    width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>NAVER
+    <div class="search">
+    <form><input type="textarea">
+    <input type="submit" value="검색" class="search" id="as">
+  <div id="c"></div></form>
+  </div></header>
+  <script>
+    let s = document.getElementById('as');
+    let c = document.getElementById('c');
+    s.addEventListener("click",c.innerHTML='HELLO');
+    c.innerHTML='HELLO';
+  </script>
+</body>
+</html>

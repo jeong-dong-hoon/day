@@ -1,0 +1,8 @@
+body {margin: 0%;
+font-size: 16px;
+font-style: italic;}
+
+body .item1 {height: 100px; width: 100px;
+background-color: aqua;}
+
+:hover {background-color: red;}

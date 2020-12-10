@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // function f(){
+    //   obj.style.backgroundColor = "orchid";
+    // }
+  </script>
+  <div id="div1">
+    안녕하세요 환영합니다.
+  </div>
+  <script>
+    let obj = document.getElementById("div1");
+    // obj.addEventListener("click",f);
+    // obj.onclick = f;
+    // obj.onclick = function() {
+    //   obj.style.backgroundColor = "green";
+    // }
+    obj.onclick = () => {
+      obj.style.backgroundColor = "orchid";
+    }
+    function f(){
+      obj.style.backgroundColor = "orchid";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>정답의 동적 삽입</h3>
+  <hr>
+  <div>Q. 거울아 거울아 세상에서 누가 제일 예쁘니?</div>
+  <button  onclick="ans1()">답보기</button>
+  <div id=ans1 onclick=""></div>
+  <script>
+    function ans1(){
+      console.log('클릭됨')
+      let a = document.getElementById("ans1");
+      a.innerHTML='백설공주';
+    }
+    function ans2(){
+      console.log('div클릭됨')
+      let a =document.getElementById("ans1");
+      a.innerHTML='';
+    }
+  </script>
+  
+</body>
+</html>

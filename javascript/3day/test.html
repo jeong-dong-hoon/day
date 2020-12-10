@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    b {background-color: yellow;}
+  </style>
+</head>
+
+<body>
+  <b id="a">울산KH정보교육원</b>
+  <button onclick="change()" id="button" class="button">hello</button>
+  <br>
+  <button onclick="change()" id="button1" class="button">hello</button>
+  <br>
+  <button onclick="change()" id="button2" class="button">hello</button>
+  <script >
+    function change(){
+      let c = document.getElementsByClassName("button");
+      let b = document.getElementById("button1"); 
+      let a = document.getElementById("a");
+      a.style.backgroundColor='red';
+      b.style.fontSize='10px';
+      c[0].style.backgroundColor ='orange';
+      c[1].style.backgroundColor ='blue';
+      c[2].style.backgroundColor ='green';
+      b.addEventListener("click",b.innerHTML='bye'); 
+    }
+
+  </script>
+  </body>
+</html>

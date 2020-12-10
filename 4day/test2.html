@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 1px solid black;
+    }
+  
+    div div {
+      display: inline-block;
+    }
+    .box {position: static;}
+    .box>.item2 {position: absolute;
+    right : 0in }
+    .box2 {text-align: right;}
+    /* text-align은 인라인요소에만 적용됨 */
+    /* 한칸띄우면 자손 */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+    <div class="item3">item3</div>
+  </div>
+  <div class="box2">오늘은 화요일 입니다.</div>
+</body>
+
+</html>

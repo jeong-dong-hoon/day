@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {text-align: center;
+    background-color: #ccc;
+    margin: 0;
+    height: 100%;
+    width: 100%;}
+    header {height: 10%;
+    margin: 1%;
+    background-color: slategray;
+    }
+    nav {height: 10%;
+    margin: 1%;
+    background-color: slategray;}
+    .box {border: black solid;
+      height: 70%;
+    width: 80%;
+    margin: 0% 1% 1% 1%;
+    float: left;}
+    .asides {border: black solid;
+    height: 70%;
+    width: 15%;
+    float: left;}
+    section {
+      height: 45%;
+      width: 98%;
+      background-color: slategray;
+      margin: 1%;
+      position: relative;
+    }
+    footer {height: 10%;
+    margin: 1%;
+    background-color: steelblue;}
+    .clearfix {clear: both;}
+    section>footer {
+      position: absolute;
+      bottom: 0;
+      height: 15%;
+      width: 98%;
+    }
+  </style>
+</head>
+<body>
+ <header>header</header> 
+ <nav>nav</nav>
+ <div class="box">
+   <section>section</section>
+   <section class="bottomsection">section
+     <header>header</header>
+     <footer>footer</footer>
+    </section>
+  </div>
+      <div class="asides">
+        <article>article</article>
+        <aside>aside</aside>
+      </div>
+      <div class="clearfix"></div>
+ <footer>footer</footer>
+</body>
+</html>

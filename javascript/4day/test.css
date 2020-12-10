@@ -1,0 +1,17 @@
+* {margin: 0;
+padding: 0;}
+
+nav {position: absolute;
+  right: 0;
+  width: 200px;
+  height: 1000px;
+  background-color: skyblue;
+}
+nav>#fsmenu{
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  background-color: slateblue;
+  color: azure;
+  line-height: 150px;
+}

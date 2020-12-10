@@ -1,0 +1,17 @@
+1. 공유폴더 \\192.168.0.121\공유폴더
+
+2. inline-block요소는 text allign으로 정렬이가능하다
+
+3. 세로정렬은 line height값을 조절한다
+
+4. backgroundimg 사용시 background-size : cover;로 이미지 사이지를 조절한다
+
+5. 용어해설
+<>  : 시작태그 
+</> : 종료태그
+Element : 요소
+
+6. font변경은 fontfamily
+
+7 box-sizing {content box : 컨텐트박스의 크기설정
+              border box : 보더를 포함한 박스크기설정}
